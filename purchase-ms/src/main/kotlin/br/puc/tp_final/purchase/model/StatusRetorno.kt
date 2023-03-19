@@ -5,10 +5,10 @@ enum class StatusRetorno {
         override fun value() = 200
     },
     ClientError {
-        override fun value() = 200
+        override fun value() = 424
     },
     ServerError {
-        override fun value() = 200
+        override fun value() = 500
     };
 
     abstract fun value(): Int

@@ -14,6 +14,9 @@ class PurchaseController(
 ) {
     val log: Logger = LoggerFactory.getLogger(PurchaseController::class.java)
 
+    /*
+    * Necessário passar o parametro da intenção de compra: id e name
+    * */
     @PostMapping("buy")
     fun buy(@RequestBody product: Product): Response {
 
